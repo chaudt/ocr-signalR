@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>OCR-SignalR</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.27.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="prometheus-net.AspNetCore" Version="3.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="v1\Handlers\" />
+    <Folder Include="v1\Models\Dtos\" />
+    <Folder Include="v1\Models\Events\" />
+    <Folder Include="v1\Models\Protos\" />
+    <Folder Include="v1\Services\" />
+    <Folder Include="v1\Types\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\project\RCMS\tcis-ssc-rcms.common\src\TCIS-SSC-RCMS.Commons\TCIS-SSC-RCMS.Commons.csproj" />
+  </ItemGroup>
+  
+</Project>
