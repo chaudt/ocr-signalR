@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\project\RCMS\tcis-ssc-rcms.common\src\TCIS-SSC-RCMS.Commons\TCIS-SSC-RCMS.Commons.csproj" />
+    <ProjectReference Include="..\..\tcis-ssc-rcms.common\src\TCIS-SSC-RCMS.Commons\TCIS-SSC-RCMS.Commons.csproj" />
   </ItemGroup>
   
 </Project>
